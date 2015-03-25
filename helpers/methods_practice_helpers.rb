@@ -7,11 +7,10 @@ module MethodsPracticeHelpers
     # attribute with the contents of alternate_text.
   end
 
-  def bootstrap_alert(message, time, type='info')
+  def bootstrap_alert(message, type='info')
     %(<div class="alert alert-#{type} alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     #{message}
-    <a href="http://www.timeanddate.com/worldclock/" class="alert-link">#{time}</a>
     </div>)
     # Generates the HTML for a Bootstrap alert (useful since it can be diffcult
     # to remember all HTML needed to do it right). It should show the message in
